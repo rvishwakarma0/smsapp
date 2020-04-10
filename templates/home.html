@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<h1><center>sms point</center></h1>
+<marquee>{{ time }}</marquee><br>
+<form action="sms" method="post">
+    {% csrf_token %}
+phone= <input type="text" name="phone"><br>
+message=<input type="text" name="msg"><br>
+<input type="submit">
+</form>
+</body>
+</html>
